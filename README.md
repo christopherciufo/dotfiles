@@ -9,10 +9,4 @@ My lovely dotfiles
 - `neovim`
 - `vim-plug`
 
-3. Change `.zshrc` to source dotfiles repo
-
-```
-# ~/.zshrc
-source ~/dotfiles/zshrc
-```
-
+3. Run `setup.sh`
