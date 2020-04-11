@@ -3,11 +3,18 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-
-let base16colorspace=256
-syntax enable
+Plug 'joshdick/onedark.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
+
+syntax on
+let base16colorspace=256
+let g:airline_theme='onedark'
+colorscheme onedark
 
 " Leader
 let mapleader="\<Space>"
@@ -34,5 +41,6 @@ set noerrorbells
 set novisualbell
 
 inoremap jk <Esc>
+nnoremap Y y$
 
 :nohlsearch
