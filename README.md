@@ -10,3 +10,15 @@ My lovely dotfiles
 - `vim-plug`
 
 3. Run `setup.sh`
+
+4. Git config
+
+```
+[user]
+	name = Christopher Ciufo
+	email = christopher.ciufo@gmail.com
+[core]
+	editor = nvim
+[push]
+	default = current
+```
