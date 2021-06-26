@@ -40,7 +40,9 @@ set hlsearch
 set noerrorbells
 set novisualbell
 
+" Custom Mappings
 inoremap jk <Esc>
 nnoremap Y y$
+nnoremap <C-P> :GFiles <CR>
 
 :nohlsearch
