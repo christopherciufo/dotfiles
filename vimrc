@@ -46,10 +46,10 @@ nnoremap <C-f> :Files <CR>
 nnoremap <C-\> :NERDTree <CR>
 
 " Splits
-nnoremap <C-j> <C-w><C-j>
-nnoremap <C-k> <C-w><C-k>
-nnoremap <C-l> <C-w><C-l>
-nnoremap <C-h> <C-w><C-h>
+nnoremap <C-j> <C-w>j
+nnoremap <c-k> <c-w>k
+nnoremap <c-l> <c-w>l
+nnoremap <C-h> <C-w>h
 set splitbelow
 set splitright
 
