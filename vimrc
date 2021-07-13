@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'preservim/nerdtree'
 Plug 'joshdick/onedark.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -32,17 +33,24 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set scrolloff=999
-
-" Search
 set hlsearch
-
-" Bells
 set noerrorbells
 set novisualbell
 
-" Custom Mappings
 inoremap jk <Esc>
 nnoremap Y y$
-nnoremap <C-P> :GFiles <CR>
+
+" Plugins 
+nnoremap <C-p> :GFiles <CR>
+nnoremap <C-f> :Files <CR>
+nnoremap <C-\> :NERDTree <CR>
+
+" Splits
+nnoremap <C-j> <C-w><C-j>
+nnoremap <C-k> <C-w><C-k>
+nnoremap <C-l> <C-w><C-l>
+nnoremap <C-h> <C-w><C-h>
+set splitbelow
+set splitright
 
 :nohlsearch
